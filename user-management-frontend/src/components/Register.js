@@ -88,16 +88,6 @@ const Register = () => {
                         required
                     />
                 </div>
-                <div>
-                    <label>Year:</label>
-                    <input
-                        type="text"
-                        name="year"
-                        value={formData.year}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
                 <button type="submit">Register</button>
             </form>
         </div>
