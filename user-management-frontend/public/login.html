@@ -19,6 +19,12 @@
                 <input type="password" id="password" name="password" required>
             </div>
             <button type="submit">Login</button>
+            <script>
+                document.getElementById('loginForm').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    window.location.href = 'public.html';
+                });
+            </script>
         </form>
     </div>
     <script src="login.js"></script>
