@@ -1,0 +1,98 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header */
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Person Container */
+.person {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 400px;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+}
+
+.person:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Person Name */
+.person h2 {
+    font-size: 1.4em;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+/* Skills List */
+.skills {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #f0f0f0;
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #555;
+    transition: background 0.3s;
+}
+
+.skills li:hover {
+    background: #e6f7ff;
+    color: #0073e6;
+}
+
+/* Contact Button */
+.contact-btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Contact Dropdown (hidden by default) */
+.contact-dropdown {
+    display: none;
+    background: #f7f7f7;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
