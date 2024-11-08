@@ -12,6 +12,7 @@ body {
 header {
     text-align: center;
     margin: 20px 0;
+    margin-left: 300px;
 }
 
 h1 {
@@ -26,6 +27,7 @@ h1 {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    margin-left: 300px;
 }
 
 .product {
@@ -61,5 +63,90 @@ h1 {
     font-size: 0.9rem;
     color: #555;
     text-align: center;
+}
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 260px;
+    background: #11101d;
+    padding: 15px;
+    z-index: 99;
+    margin-top: -94.5px;
+    margin-left: -20px;
+    margin-right: 100px;
+}
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}    
+.logo {
+    font-size: 25px;
+    padding: 0 15px;
+}
+.menu-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+    overflow-y: scroll;
+}
+.menu-content::-webkit-scrollbar {
+display: none;
+}
+.menu-items {
+height: 100%;
+width: 100%;
+list-style: none;
+transition: all 0.4s ease;
+}
+.submenu-active .menu-items {
+transform: translateX(-56%);
+}
+.menu-title {
+color: #fff;
+font-size: 14px;
+padding: 15px 20px;
+}
+.item a,
+.submenu-item {
+padding: 16px;
+display: inline-block;
+width: 100%;
+border-radius: 12px;
+}
+.item i {
+font-size: 12px;
+}
+.item a:hover,
+.submenu-item:hover,
+.submenu .menu-title:hover {
+background: rgba(255, 255, 255, 0.1);
+}
+.submenu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+.submenu {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: calc(-100% - 26px);
+    height: calc(100% + 100vh);
+    background: #11101d;
+    display: none;
+}
+.show-submenu ~ .submenu {
+display: block;
+}
+.submenu .menu-title {
+border-radius: 12px;
+cursor: pointer;
+}
+.submenu .menu-title i {
+margin-right: 10px;
 }
 
