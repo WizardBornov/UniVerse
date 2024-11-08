@@ -1,49 +1,79 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="public.html">Home</a></li>
-            <li><a href="marketplace.html">Marketplace</a></li>
-            <li><a href="skills.html">Skill Showcase</a></li>
-            <li><a href="events.html">Events</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniVERSE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <a href="home" class="logo">UniVERSE</a>
+      <div class="menu-content">
+        <ul class="menu-items">
+          <div class="menu-title"></div>
+          <li class="item">
+            <a href="public.html">Home</a>
+          </li>
+          <li class="item">
+            <a href="events.html">Events</a>
+          </li>
+
+          <li class="item">
+            <a href="marketplace.html">Marketplace</a>
+          </li>
+          <li class="item">
+            <a href="skills.html">SkillShare</a>
+          </li>
         </ul>
+      </div>
     </nav>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="images/1.jpg" style="width:100%" alt="event 1">
-        </div>
-        <div class="mySlides fade">
-            <img src="images/2.jpg" style="width:100%" alt="event 2">
-        </div>
-        <div class="mySlides fade">
-            <img src="images/3.jpg" style="width:100%" alt="event 3">
-        </div>
-    <script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
+    <nav class="navbar">
+      <i class="fa-solid fa-bars" id="sidebar-close"></i>
+    <nav>
+      
+    </nav>
+    </nav>
+    <main class="main">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="assets/images/img1.svg" style="width:100%" alt="event 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/images/img2.png" style="width:100%" alt="event 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/images/img3.png" style="width:100%" alt="event 3">
+            </div>
+    </main>
+    <script>let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        slides[slideIndex-1].style.display = "block";  
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-    </script>
-    <script src="Home.js"></script>
-</body>
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }</script>
+            <div class="container">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+  </body>
 </html>
